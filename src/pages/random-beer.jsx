@@ -5,7 +5,7 @@ function RandomBeer() {
   return (
     <div>
       <Header />
-      RandomBeer
+      <h1>Random Beer</h1>
     </div>
   );
 }

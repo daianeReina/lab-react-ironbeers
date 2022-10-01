@@ -5,7 +5,7 @@ function NewBeer() {
   return (
     <div>
       <Header />
-      NewBeer
+      <h1>New Beer</h1>
     </div>
   );
 }

@@ -6,7 +6,7 @@ function Navbar() {
   const location = useLocation();
   console.log("LOCATION", location);
   return (
-    <nav style={{ display: "flex", justifyContent: "space-around" }}>
+    <nav style={{ display: "flex", flexDirection: "column" }}>
       {ROUTES.filter((element) => {
         return location.pathname !== element.path;
       }).map((element) => {

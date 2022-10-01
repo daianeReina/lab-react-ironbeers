@@ -6,7 +6,7 @@ import ROUTES from "../routes";
 
 function Header() {
   return (
-    <nav style={{ display: "flex", justifyContent: "space-around" }}>
+    <nav style={{ display: "flex", flexDirection: "column" }}>
       <Link to={APP_PATHS.HOME}>Home</Link>
     </nav>
   );
