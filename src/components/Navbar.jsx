@@ -1,11 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import ROUTES from "../routes";
 
 function Navbar() {
+  const location = useLocation();
+  console.log("LOCATION", location);
   return (
     <nav style={{ display: "flex", justifyContent: "space-around" }}>
-      {ROUTES.map((element) => {
+      {ROUTES.filter((element) => {
+        return location.pathname !== element.path;
+      }).map((element) => {
         return (
           <Link key={element.path} to={element.path}>
             {element.name}
